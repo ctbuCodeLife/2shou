@@ -1,0 +1,30 @@
+package com.second.mapper;
+
+import com.second.model.Buyer;
+import com.second.model.BuyerExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface BuyerDAO {
+    long countByExample(BuyerExample example);
+
+    int deleteByExample(BuyerExample example);
+
+    int deleteByPrimaryKey(Integer id);
+
+    int insert(Buyer record);
+
+    int insertSelective(Buyer record);
+
+    List<Buyer> selectByExample(BuyerExample example);
+
+    Buyer selectByPrimaryKey(Integer id);
+
+    int updateByExampleSelective(@Param("record") Buyer record, @Param("example") BuyerExample example);
+
+    int updateByExample(@Param("record") Buyer record, @Param("example") BuyerExample example);
+
+    int updateByPrimaryKeySelective(Buyer record);
+
+    int updateByPrimaryKey(Buyer record);
+}
