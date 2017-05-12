@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="second:war exploded">
+    <output-path>D:/Program Files/tomcat/tomcat-9.0.0/webapps/second</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="second" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/second/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="second/web/Web" />
+    </root>
+  </artifact>
+</component>
